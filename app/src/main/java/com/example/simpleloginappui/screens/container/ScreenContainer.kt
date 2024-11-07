@@ -32,7 +32,14 @@ fun ScreenContainer() {
             )
         }
         composable(NavGraph.Registration.route) {
-            RegistrationScreen()
+            RegistrationScreen(
+                onLoginClicked = {
+                    navHost.navigate(NavGraph.Login.route)
+                },
+                onRegisterClicked = {
+                    navHost.navigate(NavGraph.Home.route)
+                }
+            )
         }
         composable(NavGraph.Home.route) {
             HomeScreen()
