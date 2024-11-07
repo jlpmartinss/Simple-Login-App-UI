@@ -1,4 +1,4 @@
-package com.example.simpleloginappui.screens
+package com.example.simpleloginappui.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -18,11 +18,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.simpleloginappui.components.ActionButton
+import com.example.simpleloginappui.ui.components.ActionButton
 import com.example.simpleloginappui.ui.theme.PrimaryGreen
 import com.example.simpleloginappui.ui.theme.PrimaryGreenDark
 import com.example.simpleloginappui.ui.theme.PrimaryPinkDark
 import com.example.simpleloginappui.ui.theme.PrimaryViolet
+import com.example.simpleloginappui.ui.util.KonfettiUtil
+import nl.dionsegijn.konfetti.compose.KonfettiView
 
 @Composable
 fun HomeScreen(
@@ -44,7 +46,7 @@ fun HomeScreen(
         Greetings()
         Spacer(modifier = Modifier.weight(1f))
         ActionButton(
-            onClick = { /*TODO*/ },
+            onClick = onRestartFlowClicked,
             text = "Press to restart",
             colors = ButtonDefaults.buttonColors(
                 containerColor = PrimaryGreenDark,
@@ -55,7 +57,10 @@ fun HomeScreen(
             modifier = Modifier.padding(24.dp)
         )
     }
-
+    KonfettiView(
+        modifier = Modifier.fillMaxSize(),
+        parties = KonfettiUtil.parade()
+    )
 }
 
 @Composable
