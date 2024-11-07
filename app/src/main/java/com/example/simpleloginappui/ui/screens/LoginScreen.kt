@@ -1,11 +1,11 @@
-package com.example.simpleloginappui.screens
+package com.example.simpleloginappui.ui.screens
 
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.example.simpleloginappui.R
-import com.example.simpleloginappui.components.AuthenticationScreenTemplate
+import com.example.simpleloginappui.ui.components.AuthenticationScreenTemplate
 import com.example.simpleloginappui.ui.theme.PrimaryPink
 import com.example.simpleloginappui.ui.theme.PrimaryPinkBlended
 import com.example.simpleloginappui.ui.theme.PrimaryPinkDark

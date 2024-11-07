@@ -1,4 +1,4 @@
-package com.example.simpleloginappui.screens
+package com.example.simpleloginappui.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,7 +23,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.simpleloginappui.R
-import com.example.simpleloginappui.components.ActionButton
+import com.example.simpleloginappui.ui.components.ActionButton
 import com.example.simpleloginappui.ui.theme.DarkTextColor
 import com.example.simpleloginappui.ui.theme.PrimaryPinkBlended
 import com.example.simpleloginappui.ui.theme.PrimaryYellow

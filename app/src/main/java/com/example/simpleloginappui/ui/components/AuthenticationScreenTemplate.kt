@@ -1,4 +1,4 @@
-package com.example.simpleloginappui.components
+package com.example.simpleloginappui.ui.components
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Canvas

@@ -1,13 +1,13 @@
-package com.example.simpleloginappui.screens.container
+package com.example.simpleloginappui.ui.screens.container
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.simpleloginappui.screens.HomeScreen
-import com.example.simpleloginappui.screens.LoginScreen
-import com.example.simpleloginappui.screens.RegistrationScreen
-import com.example.simpleloginappui.screens.WelcomeScreen
+import com.example.simpleloginappui.ui.screens.HomeScreen
+import com.example.simpleloginappui.ui.screens.LoginScreen
+import com.example.simpleloginappui.ui.screens.RegistrationScreen
+import com.example.simpleloginappui.ui.screens.WelcomeScreen
 
 @Composable
 fun ScreenContainer() {
@@ -42,8 +42,11 @@ fun ScreenContainer() {
             )
         }
         composable(NavGraph.Home.route) {
-            HomeScreen()
+            HomeScreen(
+                onRestartFlowClicked = {
+                    navHost.navigate(NavGraph.Welcome.route)
+                }
+            )
         }
-
     }
 }

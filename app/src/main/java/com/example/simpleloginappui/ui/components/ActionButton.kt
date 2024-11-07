@@ -1,4 +1,4 @@
-package com.example.simpleloginappui.components
+package com.example.simpleloginappui.ui.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row

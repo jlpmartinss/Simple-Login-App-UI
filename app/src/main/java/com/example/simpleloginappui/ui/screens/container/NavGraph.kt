@@ -1,4 +1,4 @@
-package com.example.simpleloginappui.screens.container
+package com.example.simpleloginappui.ui.screens.container
 
 sealed class NavGraph(val route: String) {
     data object Welcome : NavGraph("welcome_screen")
